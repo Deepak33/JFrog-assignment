@@ -2,8 +2,7 @@
 
 Prerequiste:
 
-Jdk1.8
-RAM 512MB
+Jdk1.8,RAM 512MB
 
 There are two ways by which petclinic can be run.
 

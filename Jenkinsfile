@@ -60,7 +60,7 @@ pipeline {
 
              '''
          }
-     } //end of stages 
+     } //end of stage
    } //end of stages
    post {
        always {

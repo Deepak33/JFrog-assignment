@@ -37,7 +37,7 @@ pipeline {
              # Copy jar file from target folder to $WORKSPACE/$TargetDir folder
              cp $WORKSPACE/target/*.jar $WORKSPACE/$TargetDir/
              # Remove old container
-             [[ $(docker ps | grep integral-admin | wc -l) -gt 0 ]] && docker stop $(docker ps | grep $image_name | awk '{print $1}') && docker rm -f $(docker ps -a | grep $image_name | awk '{print $1}')
+             [[ $(docker ps | grep image_name | wc -l) -gt 0 ]] && docker stop $(docker ps | grep $image_name | awk '{print $1}') && docker rm -f $(docker ps -a | grep $image_name | awk '{print $1}')
              
              # Remove old image
              docker rmi $image_name:1.1 || true
